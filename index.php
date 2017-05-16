@@ -1,10 +1,14 @@
+<?php
+$title = "洪聿辰 的 qqq 問卷";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>洪聿辰 的 qqq 問卷</title>
+    <title><?php echo $title;?></title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -13,20 +17,13 @@
 
 <div class="container">
     <div class="header clearfix">
-        <nav>
-            <ul class="nav nav-pills pull-right">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">About</a></li>
-                <li role="presentation"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <h3 class="text-muted">Project name</h3>
+        <h3 class="text-muted"><?php echo $title;?></h3>
     </div>
 
     <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <h1><?php echo $title;?></h1>
+        <p class="lead">說明文字...</p>
+        <p><a class="btn btn-lg btn-success" href="recdirect.php" role="button">前往問卷</a></p>
     </div>
 
     <div class="row marketing">
@@ -54,26 +51,10 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
+        <p>&copy; 2017 中正大學心理系</p>
     </footer>
 
 </div> <!-- /container -->
-
-<?php
-//$randomNumber = rand(0, 9);
-//
-//var_dump($randomNumber);
-//
-//if($randomNumber < 5) {
-//    echo "3 秒後前往 google.com<br>";
-//    header("refresh:3;url=https://google.com");
-//    die();
-//} else {
-//    echo "3 秒後前往 yahoo.com<br>";
-//    header("refresh:3;url=https://yahoo.com");
-//    die();
-//}
-?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
