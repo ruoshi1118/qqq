@@ -23,7 +23,7 @@ $title = "洪聿辰 的 qqq 問卷";
     <div class="jumbotron">
         <h1><?php echo $title;?></h1>
         <p class="lead">說明文字...</p>
-        <p><a class="btn btn-lg btn-success" href="recdirect.php" role="button">前往問卷</a></p>
+        <p><a class="btn btn-lg btn-success" href="redirect.php" role="button">前往問卷</a></p>
     </div>
 
     <div class="row marketing">
